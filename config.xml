@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="com.example.helloworld" version="1.0.0">
-  <name>Minimum Template</name>
+<widget xmlns="http://www.w3.org/ns/widgets" id="info.nfuture.citest20160826" version="1.0.0">
+  <name>CI Test</name>
   <description/>
   <author/>
   <content src="index.html"/>
-  <access origin="*"/>
   <allow-navigation href="*"/>
   <allow-intent href="itms:*"/>
   <allow-intent href="itms-apps:*"/>
-
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="Orientation" value="default"/>
-
   <preference name="loglevel" value="DEBUG"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="ErrorUrl" value=""/>
-  <preference name="Fullscreen" value="false"/>
-  <preference name="KeepRunning" value="true"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="1000"/>
-
   <preference name="AllowInlineMediaPlayback" value="false"/>
-  <preference name="AutoHideSplashScreen" value="true"/>
   <preference name="BackupWebStorage" value="cloud"/>
-  <preference name="EnableViewportScale" value="false"/>
-  <preference name="FadeSplashScreen" value="true"/>
   <preference name="FadeSplashScreenDuration" value="250"/>
   <preference name="KeyboardDisplayRequiresUserAction" value="true"/>
   <preference name="MediaPlaybackRequiresUserAction" value="false"/>
-  <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SuppressesIncrementalRendering" value="false"/>
   <preference name="TopActivityIndicator" value="gray"/>
   <preference name="GapBetweenPages" value="0"/>
@@ -39,11 +26,6 @@
     <param name="ios-package" value="CDVLocalStorage"/>
   </feature>
   <preference name="UIWebViewDecelerationSpeed" value="normal"/>
-
-  <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
-  <preference name="monaca:targetFamilyiPhone" value="1"/>
-  <preference name="monaca:targetFamilyiPad" value="1"/>
-
   <platform name="ios">
     <icon src="/res/ios/icon/icon.png" width="57" height="57"/>
     <icon src="/res/ios/icon/icon@2x.png" width="114" height="114"/>
@@ -73,13 +55,10 @@
     <splash src="/res/ios/screen/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
     <splash src="/res/ios/screen/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
     <config-file platform="ios" parent="CFBundleLocalizations" target="*-Info.plist">
-      <array>
-        <string>en</string>
-      </array>
+      <array/>
     </config-file>
   </platform>
   <platform name="android">
-    <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
     <icon src="/res/android/icon/mdpi.png" density="mdpi"/>
     <icon src="/res/android/icon/hdpi.png" density="hdpi"/>
     <icon src="/res/android/icon/xhdpi.png" density="xhdpi"/>
@@ -91,6 +70,7 @@
     <splash src="/res/android/screen/splash-port-xhdpi.9.png" density="port-xhdpi"/>
     <splash src="/res/android/screen/splash-port-xxhdpi.9.png" density="port-xxhdpi"/>
     <splash src="/res/android/screen/splash-port-xxxhdpi.9.png" density="port-xxxhdpi"/>
+    <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
   </platform>
   <platform name="windows">
     <icon src="/res/winrt/icon/package_logo_winrt.png" target="StoreLogo"/>
@@ -102,4 +82,20 @@
   <platform name="chrome">
     <icon src="/platforms/chrome/icon.png" width="128" height="128"/>
   </platform>
+  <preference name="KeepRunning" value="true"/>
+  <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
+  <preference name="Orientation" value="default"/>
+  <preference name="SplashScreenDelay" value="1000"/>
+  <preference name="Fullscreen" value="false"/>
+  <preference name="monaca:MonacaBackendUrl" value="https://cloud.s.monaca.mobi/json-rpc/"/>
+  <preference name="monaca:MonacaBackendId" value="57beae99657e4dea6c9aad94"/>
+  <preference name="monaca:MonacaBackendApiKey" value="2de9a0c3e4b0a64bf17ec44febcfa0c23c041f2d30775e8714fa66499dd87d1c"/>
+  <preference name="monaca:targetFamilyiPhone" value="1"/>
+  <preference name="monaca:targetFamilyiPad" value="1"/>
+  <preference name="AutoHideSplashScreen" value="true"/>
+  <preference name="FadeSplashScreen" value="true"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <access origin="*"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="EnableViewportScale" value="false"/>
 </widget>
